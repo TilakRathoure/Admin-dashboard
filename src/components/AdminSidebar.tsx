@@ -60,10 +60,10 @@ const AdminSidebar = () => {
             <ul className='flex flex-col g'>
                 {e.items.map((elements)=>{
 
-                    const isActive = location.pathname.includes(elements.title.toLowerCase());
+                    const isActive = location.pathname.includes("/admin/"+elements.title.toLowerCase());
 
                     return(
-                   <li className={`cursor-pointer flex items-center gap-3 ml-4 px-2 py-1 rounded-lg w-[75%] ${isActive ? 'bg-blue-100 text-blue-700' : ''}`}>
+                   <li className={`cursor-pointer flex items-center gap-3 ml-4 px-2 py-1 rounded-lg w-[85%] ${isActive ? 'bg-blue-100 text-blue-700' : ''}`}>
                        {React.createElement(elements.icon)} {elements.title}</li>
                 )})
 
