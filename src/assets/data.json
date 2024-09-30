@@ -1,0 +1,36 @@
+{
+    
+    "inventory":[
+        {
+
+        "heading":"Laptops",
+
+        "value":40
+
+    },
+    {
+
+        "heading":"Shoes",
+
+        "value":32
+
+    },
+    {
+
+        "heading":"Cameras",
+
+        "value":54
+
+    },        {
+
+        "heading":"Jeans",
+
+        "value":43
+
+    }
+    ],
+
+    "Transactions":[]
+
+
+}
