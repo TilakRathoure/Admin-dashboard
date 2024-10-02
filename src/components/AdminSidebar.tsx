@@ -1,6 +1,7 @@
 import React from 'react'
 import { IconType } from 'react-icons';
 import { FaChartBar, FaRegCreditCard, FaUsers, FaStopwatch, FaTicketAlt, FaRocket } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const AdminSidebar = () => {
 
@@ -19,9 +20,9 @@ const AdminSidebar = () => {
           topic: "Dashboard",
           items: [
             { title: "Dashboard", icon: FaChartBar },
-            { title: "Product", icon: FaRegCreditCard },
-            { title: "Customer", icon: FaUsers },
-            { title: "Transaction", icon: FaTicketAlt }
+            { title: "Products", icon: FaRegCreditCard },
+            { title: "Customers", icon: FaUsers },
+            { title: "Transactions", icon: FaTicketAlt }
           ]
         },
         {
@@ -63,9 +64,13 @@ const AdminSidebar = () => {
                     const isActive = location.pathname.includes("/admin/"+elements.title.toLowerCase());
 
                     return(
+                      <Link to={"/admin/"+elements.title.toLowerCase()}>
                    <li className={`cursor-pointer flex items-center gap-3 ml-4 px-2 py-1 rounded-lg w-[85%] ${isActive ? 'bg-blue-100 text-blue-700' : ''}`}>
                        {React.createElement(elements.icon)} {elements.title}</li>
-                )})
+
+                       </Link>
+                      
+                      )})
 
                 }
 

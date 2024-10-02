@@ -4,6 +4,8 @@ import { FaRegBell } from "react-icons/fa";
 import Image1 from "../assets/user.png";
 import { HiTrendingDown,HiTrendingUp } from "react-icons/hi";
 import data from "../assets/data.json";
+import { BarChart,DoughnutChart } from "../components/Chart";
+import { BiMaleFemale } from "react-icons/bi";
 
 const Dashboard = () => {
 
@@ -22,7 +24,7 @@ const Dashboard = () => {
 
 
   return (
-    <div className="flex">
+    <div className="flex h-screen">
 
       <div className="w-1/4 h-[100vh]">
 
@@ -30,8 +32,9 @@ const Dashboard = () => {
       <AdminSidebar/>
 
 
-
       </div>
+
+      {/* Main */}
 
       <main className="w-3/4 bg-gray-100 overflow-y-auto p-6 gap-5 flex flex-col">
       <header className="flex items-center gap-2 border-b-[3px] pb-3"><BsSearch/><input type="text" placeholder="Search for data, users, docs" className="flex-grow border-none bg-transparent p-1 outline-none focus:border-none" /><FaRegBell/><img className="w-7" src={Image1} alt="" /></header>
@@ -67,7 +70,20 @@ const Dashboard = () => {
 
       <div className="w-full flex gap-7">
 
-        <div className="w-3/4 bg-white rounded-xl">
+        <div className="w-3/4 bg-white rounded-xl p-5">
+
+        <h1 className="text-2xl opacity-60 uppercase text-center">Revenue & Transaction</h1>
+
+                    {/* Grapph here */}
+                    <BarChart
+              data_2={[300, 144, 433, 655, 237, 755, 190]}
+              data_1={[200, 444, 343, 556, 778, 455, 990]}
+              title_1="Revenue"
+              title_2="Transaction"
+              bgColor_1="rgb(0,115,255)"
+              bgColor_2="rgba(53,162,235,0.8)"
+            />
+
 
         </div>
 
@@ -99,10 +115,31 @@ const Dashboard = () => {
         ))}
 
         </div>
-
         </div>
-
       </div>
+
+      <section className="transaction-container">
+          <div className="gender-chart w-2/6 flex flex-col gap-3 bg-white rounded-lg p-5">
+            <h2 className="text-2xl opacity-60 uppercase text-center">Gender Ratio</h2>
+
+
+            <div className="flex relative justify-center items-center">
+
+            <DoughnutChart
+              labels={["Female", "Male"]}
+              data={[12, 19]}
+              backgroundColor={["hsl(340,82%,56%)", "rgba(53,162,235,0.8)"]}
+              cutout={90}
+            />
+
+              <BiMaleFemale className="absolute w-[30px] h-[30px]"/>
+          </div>
+          </div>
+
+          {/* <Table data={data.transaction} /> */}
+        </section>
+
+
 
       
 
