@@ -6,6 +6,7 @@ import { HiTrendingDown,HiTrendingUp } from "react-icons/hi";
 import data from "../assets/data.json";
 import { BarChart,DoughnutChart } from "../components/Chart";
 import { BiMaleFemale } from "react-icons/bi";
+import DashboardTable from "../components/DashboardTable";
 
 const Dashboard = () => {
 
@@ -96,7 +97,7 @@ const Dashboard = () => {
 
         <div className="flex flex-col gap-4">
 
-        {data.inventory.map((elements)=>(
+        {data.categories.map((elements)=>(
 
           <div>
 
@@ -118,7 +119,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <section className="transaction-container">
+      <section className="transaction-container gap-6 flex">
           <div className="gender-chart w-2/6 flex flex-col gap-3 bg-white rounded-lg p-5">
             <h2 className="text-2xl opacity-60 uppercase text-center">Gender Ratio</h2>
 
@@ -136,11 +137,8 @@ const Dashboard = () => {
           </div>
           </div>
 
-          {/* <Table data={data.transaction} /> */}
+          <DashboardTable data={data.transaction}/>
         </section>
-
-
-
       
 
       </main>
