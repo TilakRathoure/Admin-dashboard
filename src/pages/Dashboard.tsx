@@ -126,6 +126,8 @@ const Dashboard = () => {
 
             <div className="flex relative justify-center items-center">
 
+              {/* donutchart */}
+
             <DoughnutChart
               labels={["Female", "Male"]}
               data={[12, 19]}
@@ -137,7 +139,14 @@ const Dashboard = () => {
           </div>
           </div>
 
+          {/* Table */}
+
+          <div className="w-4/6">
+
           <DashboardTable data={data.transaction}/>
+
+          </div>
+
         </section>
       
 

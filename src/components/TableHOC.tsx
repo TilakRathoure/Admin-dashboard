@@ -41,18 +41,18 @@ import {
       } = useTable(options, useSortBy, usePagination);
   
       return (
-        <div className={` ${containerClassname}  bg-white w-full p-5` }>
-          <h2 className="text-2xl opacity-60 uppercase text-center mb-5">{heading}</h2>
+        <div className={` ${containerClassname}  bg-white w-full p-5 h-full rounded-lg` }>
+          <h2 className="text-2xl opacity-60 uppercase text-center mb-7">{heading}</h2>
   
           <table className="table w-full" {...getTableProps()}>
             <thead>
               {headerGroups.map((headerGroup) => (
-                <tr className="mb-2" {...headerGroup.getHeaderGroupProps()}>
+                <tr className="mb-4" {...headerGroup.getHeaderGroupProps()}>
                   {headerGroup.headers.map((column) => (
                     <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                       {column.render("Header")}
                       {column.isSorted && (
-                        <span>
+                        <span className="inline-flex">
                           {""}
                           {column.isSortedDesc ? (
                             <AiOutlineSortDescending />
@@ -73,7 +73,7 @@ import {
                 return (
                   <tr className="" {...row.getRowProps()}>
                     {row.cells.map((cell) => (
-                      <td className="text-center p-3" {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                      <td className="p-3 text-center" {...cell.getCellProps()}>{cell.render("Cell")}</td>
                     ))}
                   </tr>
                 );
@@ -82,12 +82,12 @@ import {
           </table>
   
           {showPagination && (
-            <div className="table-pagination">
-              <button disabled={!canPreviousPage} onClick={previousPage}>
+            <div className="table-pagination w-full flex gap-2 justify-center items-center mt-5">
+              <button className="bg-blue-400 px-2 py-1 rounded-lg" disabled={!canPreviousPage} onClick={previousPage}>
                 Prev
               </button>
               <span>{`${pageIndex + 1} of ${pageCount}`}</span>
-              <button disabled={!canNextPage} onClick={nextPage}>
+              <button className="bg-blue-400 px-2 py-1 rounded-lg" disabled={!canNextPage} onClick={nextPage}>
                 Next
               </button>
             </div>

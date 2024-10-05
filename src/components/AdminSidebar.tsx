@@ -47,9 +47,9 @@ const AdminSidebar = () => {
 
 
   return (
-    <aside className='p-2'>
+    <aside className='p-4 pl-6'>
 
-        <h1 className='text-2xl mb-2 font-bold'>Logo.</h1>
+        <h1 className='text-2xl mb-2 font-bold'>ShopHere.</h1>
 
         <div className='p-3'>
 
@@ -61,7 +61,7 @@ const AdminSidebar = () => {
             <ul className='flex flex-col g'>
                 {e.items.map((elements)=>{
 
-                    const isActive = location.pathname.includes("/admin/"+elements.title.toLowerCase());
+                    const isActive:boolean = location.pathname.includes("/admin/"+elements.title.toLowerCase());
 
                     return(
                       <Link to={"/admin/"+elements.title.toLowerCase()}>
