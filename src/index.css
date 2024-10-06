@@ -10,7 +10,7 @@ table img{
     min-height: 70px;
     object-fit: contain;
 }
-.dashboard-product-box a{
+table a{
 
     background-color: rgb(25, 223, 223);
     padding: 7px;

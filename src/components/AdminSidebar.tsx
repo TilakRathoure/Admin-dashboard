@@ -47,7 +47,7 @@ const AdminSidebar = () => {
 
 
   return (
-    <aside className='p-4 pl-6'>
+    <aside className='p-4 pl-6 h-screen'>
 
         <h1 className='text-2xl mb-2 font-bold'>ShopHere.</h1>
 
@@ -58,14 +58,14 @@ const AdminSidebar = () => {
             <div className='flex flex-col gap-3 mb-4'>
             <h2 className='text-base'>{e.topic}</h2>
 
-            <ul className='flex flex-col g'>
+            <ul className='flex flex-col'>
                 {e.items.map((elements)=>{
 
                     const isActive:boolean = location.pathname.includes("/admin/"+elements.title.toLowerCase());
 
                     return(
-                      <Link to={"/admin/"+elements.title.toLowerCase()}>
-                   <li className={`cursor-pointer flex items-center gap-3 ml-4 px-2 py-1 rounded-lg w-[85%] ${isActive ? 'bg-blue-100 text-blue-700' : ''}`}>
+                      <Link to={e.topic==="Charts"?"/admin/charts/"+elements.title.toLowerCase():"/admin/"+elements.title.toLowerCase()}>
+                   <li className={`cursor-pointer h-[45px] flex items-center gap-3 ml-4 px-2 py-1 rounded-lg w-[85%] ${isActive ? 'bg-blue-100 text-blue-700' : ''}`}>
                        {React.createElement(elements.icon)} {elements.title}</li>
 
                        </Link>

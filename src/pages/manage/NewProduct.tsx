@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useState } from 'react'
-import AdminSidebar from '../components/AdminSidebar'
+import AdminSidebar from '../../components/AdminSidebar'
 
 const NewProduct = () => {
     const [name, setName] = useState<string>("");
