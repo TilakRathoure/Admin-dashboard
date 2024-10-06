@@ -33,7 +33,7 @@ const arr: DataType[] = [
     name: "Puma Shoes Air 2023",
     price: 690,
     stock: 3,
-    action: <Link to="/admin/product/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/products/sajknaskd">Manage</Link>,
   },
 
   {
@@ -41,14 +41,14 @@ const arr: DataType[] = [
     name: "Macbook",
     price: 232223,
     stock: 213,
-    action: <Link to="/admin/product/sdaskdnkasjdn">Manage</Link>,
+    action: <Link to="/admin/products/sdaskdnkasjdn">Manage</Link>,
   },
   {
     photo: <img src={img} alt="Shoes" />,
     name: "Puma Shoes Air 2023",
     price: 690,
     stock: 3,
-    action: <Link to="/admin/product/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/products/sajknaskd">Manage</Link>,
   },
 
   {
@@ -56,14 +56,14 @@ const arr: DataType[] = [
     name: "Macbook",
     price: 232223,
     stock: 213,
-    action: <Link to="/admin/product/sdaskdnkasjdn">Manage</Link>,
+    action: <Link to="/admin/products/sdaskdnkasjdn">Manage</Link>,
   },
   {
     photo: <img src={img} alt="Shoes" />,
     name: "Puma Shoes Air 2023",
     price: 690,
     stock: 3,
-    action: <Link to="/admin/product/sajknaskd">Manage</Link>,
+    action: <Link to="/admin/products/sajknaskd">Manage</Link>,
   },
 
   {
@@ -71,14 +71,14 @@ const arr: DataType[] = [
     name: "Macbook",
     price: 232223,
     stock: 213,
-    action: <Link to="/admin/product/sdaskdnkasjdn">Manage</Link>,
+    action: <Link to="/admin/products/sdaskdnkasjdn">Manage</Link>,
   },
   {
     photo: <img src={img2} alt="Shoes" />,
     name: "Macbook",
     price: 232223,
     stock: 213,
-    action: <Link to="/admin/product/sdaskdnkasjdn">Manage</Link>,
+    action: <Link to="/admin/products/sdaskdnkasjdn">Manage</Link>,
   },
 ];
 
@@ -99,6 +99,9 @@ const Products = () => {
     <div className="w-1/4 h-[100vh]">
     <AdminSidebar/>
     </div>
+
+    {/* AddProduct */}
+    <Link to={"/admin/products/new"} className="z-10 fixed top-4 right-10 w-12 h-12 rounded-full bg-red-600 text-center text-white flex items-center justify-center border-1 border-black">+</Link>
 
     {/* Main */}
 
