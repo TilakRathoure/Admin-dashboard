@@ -97,7 +97,7 @@ const Search = () => {
   )();
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
 
     <div className="w-1/4 h-[100vh]">
 
@@ -108,7 +108,7 @@ const Search = () => {
 
     </div>
 
-    <div className="w-3/4 bg-gray-100">
+    <div className="w-3/4">
 
     {/* Table */}
 

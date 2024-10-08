@@ -65,12 +65,18 @@ import {
   
       scales: {
         y: {
+          ticks:{
+            color:"rgba(246, 239, 243, 1)"
+          },
           beginAtZero: true,
           grid: {
             display: false,
           },
         },
         x: {
+          ticks:{
+            color:"rgba(246, 239, 243, 1)"
+          },
           grid: {
             display: false,
           },
@@ -100,7 +106,7 @@ import {
       ],
     };
   
-    return <Bar width={horizontal ? "200%" : ""} options={options} data={data} />;
+    return <Bar className="text-gray-100" width={horizontal ? "200%" : ""} options={options} data={data} />;
   };
   
   interface DoughnutChartProps {
@@ -139,10 +145,12 @@ import {
           display: legends,
           position: "bottom",
           labels: {
+            color: "white",
             padding: 40,
           },
         },
       },
+      
       cutout,
     };
   
@@ -213,12 +221,18 @@ import {
   
       scales: {
         y: {
+          ticks:{
+            color:"white",
+          },
           beginAtZero: true,
           grid: {
             display: false,
           },
         },
         x: {
+          ticks:{
+            color:"white"
+          },
           grid: {
             display: false,
           },
@@ -239,5 +253,5 @@ import {
       ],
     };
   
-    return <Line options={options} data={lineChartData} />;
+    return <Line className="p-4 backgco border-2 border-gray-700" options={options} data={lineChartData} />;
   };

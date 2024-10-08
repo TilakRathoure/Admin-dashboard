@@ -86,7 +86,7 @@ const Transactions = () => {
 
     </div>
 
-    <div className="w-3/4 bg-gray-100 overflow-auto p-7">
+    <div className="w-3/4  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-auto p-7">
 
     {/* TABLE */}
 

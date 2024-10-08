@@ -22,13 +22,13 @@ const NewProduct = () => {
       };
 
   return (
-<div className='flex h-screen'>
-    <aside className='w-1/4 h-full bg-white shadow-md'>
+<div className='text-gray-100 flex h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900'>
+    <aside className='w-1/4 h-full shadow-md'>
         <AdminSidebar />
     </aside>
 
-    <main className='bg-gray-100 w-3/4 h-full overflow-y-auto flex justify-center items-center'>
-        <form className="flex flex-col items-center gap-8 p-8 w-full max-w-[400px] bg-white rounded-lg shadow-lg">
+    <main className=' w-3/4 h-full overflow-y-auto flex justify-center items-center'>
+        <form className="flex flex-col items-center gap-8 p-8 w-full max-w-[400px] border-2 border-gray-700 rounded-lg shadow-gray-700 shadow-lg">
   <h2 className="uppercase tracking-wider">New Product</h2>
   
   <div className="w-full relative">
@@ -40,7 +40,7 @@ const NewProduct = () => {
       placeholder="Name"
       value={name}
       onChange={(e) => setName(e.target.value)}
-      className="w-full p-4 border border-gray-300 rounded-md"
+      className="w-full p-4 border border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
     />
   </div>
 
@@ -52,7 +52,7 @@ const NewProduct = () => {
       placeholder="Price"
       value={price}
       onChange={(e) => setPrice(Number(e.target.value))}
-      className="w-full p-4 border border-gray-300 rounded-md"
+      className="w-full p-4  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
     />
   </div>
 
@@ -64,7 +64,7 @@ const NewProduct = () => {
       placeholder="Stock"
       value={stock}
       onChange={(e) => setStock(Number(e.target.value))}
-      className="w-full p-4 border border-gray-300 rounded-md"
+      className="w-full p-4  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
     />
   </div>
 
@@ -75,7 +75,7 @@ const NewProduct = () => {
       accept="image/*"
       type="file"
       onChange={changeImageHandler}
-      className="w-full p-4 border border-gray-300 rounded-md"
+      className="w-full p-4 border border-gray-700 rounded-md"
     />
   </div>
 

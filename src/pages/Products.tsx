@@ -95,8 +95,8 @@ const Products = () => {
   )();
 
   return (
-    <div className="flex h-screen">
-    <div className="w-1/4 h-[100vh]">
+    <div className="flex h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="w-1/4">
     <AdminSidebar/>
     </div>
 
@@ -105,7 +105,7 @@ const Products = () => {
 
     {/* Main */}
 
-    <div className="w-3/4 bg-gray-100 overflow-auto p-7 rounded-lg">
+    <div className="w-3/4  overflow-auto p-7 rounded-lg">
 
     <div className="">
     {Table}

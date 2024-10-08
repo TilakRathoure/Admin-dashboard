@@ -36,13 +36,13 @@ const ProductManage = () => {
     setPhoto(photoUpdate);
   };
   return (
-    <div className="admin-container flex h-screen">
+    <div className="admin-container flex h-screen text-gray-100">
         <div className="w-1/4">
         <AdminSidebar />
         </div>
-      <main className="product-management flex gap-5 items-center p-16 bg-gray-100 w-3/4 overflow-auto">
+      <main className="product-management flex gap-5 items-center p-16  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-3/4 overflow-auto">
         {/* Section for Product Details */}
-        <section className=" w-full h-[85vh] max-w-lg bg-white p-20 shadow-lg relative rounded-lg flex flex-col gap-4">
+        <section className=" w-full h-[85vh] max-w-lg border-2 border-gray-700 p-20 shadow-lg relative rounded-lg flex flex-col gap-4">
           <strong className="font-light">ID - asnmdkasndmsan</strong>
           <img src={photo} alt="Product" className="w-full object-cover min-w-5 rounded-lg" />
           <p className="text-center tracking-wider uppercase">{name}</p>
@@ -55,8 +55,8 @@ const ProductManage = () => {
         </section>
 
         {/* Form for Product Management */}
-        <article className=" p-8 w-full max-w-md bg-white rounded-lg shadow-md">
-          <form onSubmit={submitHandler} className="flex flex-col gap-8">
+        <article className=" p-8 w-full max-w-md border-2 border-gray-700 rounded-lg shadow-md bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+          <form onSubmit={submitHandler} className="flex flex-col gap-8  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
             <h2 className="uppercase tracking-wide">Manage</h2>
 
             <div className="relative">
@@ -67,7 +67,7 @@ const ProductManage = () => {
                 placeholder="Name"
                 value={nameUpdate}
                 onChange={(e) => setNameUpdate(e.target.value)}
-                className="w-full p-4 border border-gray-300 rounded-md"
+                className="w-full p-4 border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
               />
             </div>
 
@@ -79,7 +79,7 @@ const ProductManage = () => {
                 placeholder="Price"
                 value={priceUpdate}
                 onChange={(e) => setPriceUpdate(Number(e.target.value))}
-                className="w-full p-4 border border-gray-300 rounded-md"
+                className="w-full p-4 border  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
               />
             </div>
 
@@ -91,7 +91,7 @@ const ProductManage = () => {
                 placeholder="Stock"
                 value={stockUpdate}
                 onChange={(e) => setStockUpdate(Number(e.target.value))}
-                className="w-full p-4 border border-gray-300 rounded-md"
+                className="w-full p-4 border  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md"
               />
             </div>
 
@@ -101,7 +101,7 @@ const ProductManage = () => {
                 required
                 type="file"
                 onChange={changeImageHandler}
-                className="w-full p-4 border border-gray-300 rounded-md"
+                className="w-full p-4 border  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-md cursor-pointer"
               />
             </div>
 

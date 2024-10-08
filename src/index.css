@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.backgco {
+    @apply border border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
+  }
+
 table img{
     margin: auto;
     width: 70px;

@@ -1,25 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Stopwatch = () => {
   const [count, setCount] = useState<number>(0);
+  const [start,setStart]= useState<boolean>(false);
 
-  useEffect(() => {
-    if (count < 10) {
-      const timer = setTimeout(() => {
-        setCount(count + 1);
-      }, 1000);
 
-      const newf=()=>{
-        console.log("Nice");
-      }
+  useEffect(()=>{
 
-      newf();
+    if(start){
 
-      return () => clearTimeout(timer);
+      setCount(count+1);
     }
-  }, [count]);
 
-  return <div>{count === 10 ? "Reached 10" : count}</div>;
+  },[count,start])
+
+
+
+  return (
+    <div>
+      {count}
+      <button onClick={()=>setStart(true)}>Start</button>
+      <button onClick={()=>setStart(false)}>Stop</button>
+      <button onClick={()=>setCount(0)}>reset</button>
+    </div>
+  );
 };
 
 export default Stopwatch;

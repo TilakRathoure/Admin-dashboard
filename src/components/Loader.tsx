@@ -2,7 +2,7 @@
 
 const Loader = () => {
   return (
-    <div>Loader...</div>
+    <div className="backgco h-screen w-screen">flsadfjlsk</div>
   )
 }
 

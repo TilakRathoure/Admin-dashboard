@@ -8,9 +8,9 @@ const Pie = () => {
       <div className="w-1/4">
         <AdminSidebar />
       </div>
-      <main className="chart-container w-3/4 bg-gray-100 p-7 overflow-auto">
+      <main className="chart-container w-3/4 backgco p-7 overflow-auto text-white">
 
-      <div className="bg-white pt-4 rounded-lg">
+      <div className="backgco pt-4 rounded-lg">
         {/* Section 1 */}
         <section className="w-4/5 mx-auto">
           <h1 className="text-4xl mx-auto mb-20 font-bold ">Pie & Doughnut Charts</h1>
@@ -61,7 +61,7 @@ const Pie = () => {
 
         {/* Section 4 */}
         <section className="w-4/5 mx-auto my-16">
-          <h2 className="text-center text-2xl mb-8">Product data.categories Ratio</h2>
+          <h2 className="text-center text-2xl mb-8">Product</h2>
           <div className="w-full max-w-[25rem] mx-auto mt-24">
             <DoughnutChart
               labels={[

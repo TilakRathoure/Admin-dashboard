@@ -81,14 +81,14 @@ const TransactionManage = () => {
   };
 
   return (
-    <div className="admin-container flex">
+    <div className="admin-container flex text-gray-100">
         <div className="w-1/4">
       <AdminSidebar />
 
       </div>
-      <main className="product-management flex justify-center bg-gray-100 p-8 gap-8 w-3/4 h-screen">
+      <main className="product-management flex justify-center backgco p-8 gap-8 w-3/4 h-screen">
         {/* Order Items Section */}
-        <section className="w-full max-w-lg p-8 bg-white shadow-md rounded-md">
+        <section className="w-full max-w-lg p-8 backgco shadow-md rounded-md">
           <h2 className="text-2xl font-semibold mb-4">Order Items</h2>
           {order.orderItems.map((i) => (
             <ProductCard
@@ -103,7 +103,7 @@ const TransactionManage = () => {
         </section>
 
         {/* Order Info Section */}
-        <article className="shipping-info-card p-8 bg-white shadow-md rounded-md w-full max-w-md">
+        <article className="shipping-info-card p-8 backgco shadow-md rounded-md w-full max-w-md">
           <h1 className="text-2xl font-bold text-center mb-4">Order Info</h1>
           <h5 className="mt-4 mb-2 text-lg font-bold">User Info</h5>
           <p className="mb-2">Name: {name}</p>
