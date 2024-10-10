@@ -106,7 +106,7 @@ import {
       ],
     };
   
-    return <Bar className="text-gray-100" width={horizontal ? "200%" : ""} options={options} data={data} />;
+    return <Bar className="text-gray-100 backgco p-4" width={horizontal ? "200%" : ""} options={options} data={data} />;
   };
   
   interface DoughnutChartProps {
@@ -253,5 +253,5 @@ import {
       ],
     };
   
-    return <Line className="p-4 backgco border-2 border-gray-700" options={options} data={lineChartData} />;
+    return <Line className="p-4 w-full backgco border-2 border-gray-700" options={options} data={lineChartData} />;
   };

@@ -22,7 +22,7 @@ const Bar = () => {
       <div className="w-1/4">
       <AdminSidebar />
       </div>
-      <main className="w-3/4 overflow-auto backgco text-white">
+      <main className="w-3/4 overflow-auto backgco text-white p-7">
         <h1>Bar Charts</h1>
         <section>
           <BarChart

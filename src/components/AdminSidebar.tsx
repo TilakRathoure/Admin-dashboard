@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconType } from 'react-icons';
-import { FaChartBar, FaRegCreditCard, FaUsers, FaStopwatch, FaTicketAlt, FaRocket } from 'react-icons/fa';
+import { FaChartBar, FaRegCreditCard, FaUsers, FaStopwatch, FaTicketAlt} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const AdminSidebar = () => {
@@ -37,8 +37,7 @@ const AdminSidebar = () => {
           topic: "Apps",
           items: [
             { title: "Stopwatch", icon: FaStopwatch },
-            { title: "Coupon", icon: FaTicketAlt },
-            { title: "Toss", icon: FaRocket }
+            { title: "Coupon", icon: FaTicketAlt }
           ]
         }
       ];
