@@ -77,23 +77,15 @@ const Transactions = () => {
 
 
   return (
-    <div className="flex h-screen">
-
-    <div className="w-1/4 h-[100vh]">
-
+    <div className="flex justify-center h-screen backgco">
 
     <AdminSidebar/>
 
-    </div>
-
-    <div className="w-3/4  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-auto p-7">
 
     {/* TABLE */}
 
-    <div className="">
+    <div className="md:w-3/4 backgco border-none p-5">
     {Table}
-    </div>
-
     </div>
 
     </div>

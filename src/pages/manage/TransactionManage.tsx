@@ -81,12 +81,11 @@ const TransactionManage = () => {
   };
 
   return (
-    <div className="admin-container flex text-gray-100">
-        <div className="w-1/4">
+    <div className="md:flex text-gray-100">
+
       <AdminSidebar />
 
-      </div>
-      <main className="product-management flex justify-center backgco p-8 gap-8 w-3/4 h-screen">
+      <main className="product-management flex justify-center backgco p-8 gap-8">
         {/* Order Items Section */}
         <section className="w-full max-w-lg p-8 backgco shadow-md rounded-md">
           <h2 className="text-2xl font-semibold mb-4">Order Items</h2>
@@ -136,7 +135,7 @@ const TransactionManage = () => {
 
           <button
             onClick={updateHandler}
-            className="mt-4 p-4 bg-blue-600 text-white w-full rounded-md text-lg hover:opacity-80"
+            className="mt-4 bg-blue-600 text-white w-full rounded-md text-lg hover:opacity-80"
           >
             Process Status
           </button>
@@ -147,7 +146,7 @@ const TransactionManage = () => {
 };
 
 const ProductCard = ({ name, photo, price, quantity, _id }: OrderItemType) => (
-  <div className="transaction-product-card flex items-center gap-4 mb-4">
+  <div className="transaction-product-card flex flex-col items-center gap-4 mb-4">
     <img src={photo} alt={name} className="w-16 h-16 object-cover rounded-md" />
     <Link to={`/product/${_id}`} className="text-blue-600">
       {name}

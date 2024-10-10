@@ -97,25 +97,14 @@ const Search = () => {
   )();
 
   return (
-    <div className="flex h-screen  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-
-    <div className="w-1/4 h-[100vh]">
-
+    <div className="md:flex backgco h-screen">
 
     <AdminSidebar/>
 
-
-
-    </div>
-
-    <div className="w-3/4">
-
     {/* Table */}
 
-    <div className="p-6 rounded-lg">
+    <div className="md:w-3/4 overflow-auto p-5">
       {Table}
-    </div>
-
     </div>
 
     </div>

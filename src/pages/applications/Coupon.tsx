@@ -47,12 +47,10 @@ const Coupon = () => {
   }, [coupon]);
 
   return (
-    <div className="admin-container flex backgco text-gray-100">
-        <div className="w-1/4">
+    <div className="admin-container flex h-screen backgco text-gray-100">
 
         <AdminSidebar />
 
-        </div>
       <main className="flex-1 p-8 w-3/4 flex flex-col justify-center items-center">
         <h1 className="text-3xl font-bold mb-6">Coupon</h1>
         <section>

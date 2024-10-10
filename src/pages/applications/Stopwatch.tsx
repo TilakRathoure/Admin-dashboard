@@ -35,12 +35,12 @@ const Stopwatch = () => {
   }, [isRunning]);
 
   return (
-    <div className="flex backgco text-gray-100">
-      <div className="w-1/4">
+    <div className=" backgco text-gray-100 h-screen flex justify-center items-center">
+
       <AdminSidebar />
-      </div>
-      <main className="w-3/4 flex flex-col p-16 h-screen">
-        <h1 className="text-3xl font-bold mb-8">Stopwatch</h1>
+
+      <main className="md:w-3/4 flex flex-col p-16 backgco h-[75vh]">
+        <h1 className="text-3xl font-bold mb-8 text-center">Stopwatch</h1>
         <section className="flex flex-col items-center justify-center h-full gap-8">
           <div className="stopwatch text-center">
             <h2 className="text-2xl font-light">{formatTime(time)}</h2>

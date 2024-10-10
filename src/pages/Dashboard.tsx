@@ -27,23 +27,19 @@ const Dashboard = () => {
   return (
     <div className="flex h-screen text-gray-100 bg-opacity-50">
 
-      <div className="w-1/4 h-[100vh]">
-
 
       <AdminSidebar/>
 
 
-      </div>
-
       {/* Main */}
 
-      <main className="w-3/4 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-y-auto p-6 gap-5 flex flex-col">
+      <main className=" bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-y-auto p-6 gap-5 flex flex-col">
       <header className="flex items-center gap-2 border-gray-700 border-b-[2px] pb-3"><BsSearch/><input type="text" placeholder="Search for data, users, docs" className="flex-grow border-none bg-transparent p-1 outline-none focus:border-none" /><FaRegBell/><img className="w-7" src={Image1} alt="" /></header>
 
-      <div className="flex gap-2 justify-between">
+      <div className="flex flex-wrap justify-center gap-2">
         {DashElements.map((elements)=>(
 
-          <div className="flex border-2 border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-[16rem] h-[8rem] rounded-xl p-4 justify-around">
+          <div className="flex border-2 border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-[13rem] h-[8rem] rounded-xl p-4 justify-around">
 
             <div className="flex flex-col ">
             <h1>{elements.heading}</h1>
@@ -69,9 +65,9 @@ const Dashboard = () => {
       {/* chart */}
 
 
-      <div className="w-full flex gap-7">
+      <div className="w-full flex flex-col gap-7">
 
-        <div className="w-3/4 bg-gradient-to-br border-2 border-gray-700 from-gray-900 via-gray-800 to-gray-900 rounded-xl p-5">
+        <div className=" bg-gradient-to-br border-2 border-gray-700 from-gray-900 via-gray-800 to-gray-900 rounded-xl p-5">
 
         <h1 className="text-2xl uppercase text-center ">Revenue & Transaction</h1>
 
@@ -91,7 +87,7 @@ const Dashboard = () => {
 
         {/* INVENTORY */}
 
-        <div className="w-[23.5%] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg p-5 flex flex-col gap-6 border-2 border-gray-700">
+        <div className=" bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-lg p-5 flex flex-col gap-6 border-2 border-gray-700">
 
         <h1 className="text-2xl uppercase text-gray-100 text-center">Inventory</h1>
 
@@ -119,12 +115,12 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <section className="transaction-container gap-6 flex">
-          <div className="gender-chart w-2/6 flex flex-col gap-3 bg-gradient-to-br border-2 border-gray-700 from-gray-900 via-gray-800 to-gray-900 rounded-lg p-5">
+      <section className="transaction-container gap-6 flex flex-col">
+          <div className=" flex flex-col gap-3 bg-gradient-to-br border-2 border-gray-700 from-gray-900 via-gray-800 to-gray-900 rounded-lg p-5">
             <h2 className="text-2xl uppercase text-center">Gender Ratio</h2>
 
 
-            <div className="flex relative justify-center items-center">
+            <div className="flex relative justify-center items-center h-[50vh]">
 
               {/* donutchart */}
 
@@ -141,7 +137,7 @@ const Dashboard = () => {
 
           {/* Table */}
 
-          <div className="w-4/6">
+          <div className="">
 
           <DashboardTable data={data.transaction}/>
 

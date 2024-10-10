@@ -95,22 +95,17 @@ const Products = () => {
   )();
 
   return (
-    <div className="flex h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-    <div className="w-1/4">
+    <div className="md:flex bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 md:h-screen">
     <AdminSidebar/>
-    </div>
 
     {/* AddProduct */}
     <Link to={"/admin/products/new"} className="z-10 fixed top-4 right-10 w-12 h-12 rounded-full bg-red-600 text-center text-white flex items-center justify-center border-1 border-black">+</Link>
 
     {/* Main */}
 
-    <div className="w-3/4  overflow-auto p-7 rounded-lg">
+    <div className="md:w-3/4 p-7 rounded-lg">
 
-    <div className="">
     {Table}
-
-    </div>
 
     </div>
 

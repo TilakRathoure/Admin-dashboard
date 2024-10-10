@@ -36,11 +36,11 @@ const ProductManage = () => {
     setPhoto(photoUpdate);
   };
   return (
-    <div className="admin-container flex h-screen text-gray-100">
-        <div className="w-1/4">
+    <div className="flex h-screen text-gray-100">
+
         <AdminSidebar />
-        </div>
-      <main className="product-management flex gap-5 items-center p-16  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-3/4 overflow-auto">
+        
+      <main className=" flex gap-5 items-center p-16  border-gray-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-3/4 overflow-y-auto">
         {/* Section for Product Details */}
         <section className=" w-full h-[85vh] max-w-lg border-2 border-gray-700 p-20 shadow-lg relative rounded-lg flex flex-col gap-4">
           <strong className="font-light">ID - asnmdkasndmsan</strong>

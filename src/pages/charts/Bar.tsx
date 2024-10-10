@@ -18,12 +18,12 @@ const months = [
 
 const Bar = () => {
   return (
-    <div className=" flex h-screen">
-      <div className="w-1/4">
+    <div className="md:flex h-screen">
+
       <AdminSidebar />
-      </div>
-      <main className="w-3/4 overflow-auto backgco text-white p-7">
-        <h1>Bar Charts</h1>
+
+      <main className="md:w-3/4 overflow-auto backgco text-white p-7">
+        <h1 className="w-full text-center">Bar Charts</h1>
         <section>
           <BarChart
             data_1={[200, 444, 343, 556, 778, 455, 990]}

@@ -9,11 +9,11 @@ const months = [
 const BarCharts = () => {
   return (
     <div className="flex h-screen">
-      <div className="w-1/4">
+
         <AdminSidebar />
-      </div>
+
       <main className="chart-container flex-1 overflow-auto backgco text-gray-100 p-7 flex flex-col gap-4">
-        <h1>Line Charts</h1>
+        <h1 className="text-center">Line Charts</h1>
 
         {/* Section 1: Active Users */}
         <section className="flex flex-col ">

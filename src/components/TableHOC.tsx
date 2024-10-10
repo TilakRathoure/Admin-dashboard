@@ -41,7 +41,7 @@ import {
       } = useTable(options, useSortBy, usePagination);
   
       return (
-        <div className={` ${containerClassname} border-2 border-gray-700 text-gray-100  bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-full p-5 h-full rounded-lg` }>
+        <div className={` ${containerClassname} border-2 border-gray-700 text-gray-100  bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 w-full p-5 h-full rounded-lg overflow-auto` }>
           <h2 className="text-2xl uppercase text-center mb-7">{heading}</h2>
   
           <table className="table w-full" {...getTableProps()}>
