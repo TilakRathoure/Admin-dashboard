@@ -81,11 +81,11 @@ const TransactionManage = () => {
   };
 
   return (
-    <div className="md:flex text-gray-100">
+    <div className="md:flex text-gray-100 h-screen backgco">
 
       <AdminSidebar />
 
-      <main className="product-management flex justify-center backgco p-8 gap-8">
+      <main className="md:w-3/4 flex justify-center backgco p-8 gap-8">
         {/* Order Items Section */}
         <section className="w-full max-w-lg p-8 backgco shadow-md rounded-md">
           <h2 className="text-2xl font-semibold mb-4">Order Items</h2>
@@ -151,7 +151,7 @@ const ProductCard = ({ name, photo, price, quantity, _id }: OrderItemType) => (
     <Link to={`/product/${_id}`} className="text-blue-600">
       {name}
     </Link>
-    <span className="ml-auto">{`$${price} x ${quantity} = $${price * quantity}`}</span>
+    <span className="">{`$${price} x ${quantity} = $${price * quantity}`}</span>
   </div>
 );
 

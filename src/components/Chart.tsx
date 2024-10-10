@@ -253,5 +253,5 @@ import {
       ],
     };
   
-    return <Line className="p-4 w-full backgco border-2 border-gray-700" options={options} data={lineChartData} />;
+    return <Line className="p-4 backgco border-2 border-gray-700" options={options} data={lineChartData} />;
   };

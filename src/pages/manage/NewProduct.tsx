@@ -22,11 +22,11 @@ const NewProduct = () => {
       };
 
   return (
-<div className='text-gray-100 h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900'>
+<div className='md:flex text-gray-100 h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900'>
 
         <AdminSidebar />
 
-    <main className=' h-full overflow-y-auto flex justify-center items-center'>
+    <main className='md:w-3/4 h-full overflow-y-auto flex justify-center items-center'>
         <form className="flex flex-col items-center gap-8 p-8 w-full max-w-[400px] border-2 border-gray-700 rounded-lg shadow-gray-700 shadow-lg">
   <h2 className="uppercase tracking-wider">New Product</h2>
   

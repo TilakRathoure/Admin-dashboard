@@ -24,7 +24,7 @@ const Bar = () => {
 
       <main className="md:w-3/4 overflow-auto backgco text-white p-7">
         <h1 className="w-full text-center">Bar Charts</h1>
-        <section>
+        <section className="">
           <BarChart
             data_1={[200, 444, 343, 556, 778, 455, 990]}
             data_2={[300, 144, 433, 655, 237, 755, 190]}
@@ -35,7 +35,7 @@ const Bar = () => {
           />
           <h2>Top Selling Products & Top Customers</h2>
         </section>
-        <section>
+        <section className="">
           <BarChart
             horizontal={true}
             data_1={[

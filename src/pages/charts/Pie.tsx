@@ -9,12 +9,12 @@ const Pie = () => {
       <AdminSidebar />
 
       {/* Main Content Area */}
-      <main className="md:w-3/4 flex flex-col justify-center items-center p-7 overflow-auto text-white backgco">
-        <div className="w-full">
+      <main className="md:w-3/4 flex flex-col items-center p-7 overflow-auto text-white backgco">
+        <div className="w-full flex flex-col">
           {/* Section 1 */}
-          <section className="w-4/5 mx-auto">
+          <section className="w-4/5 mx-auto flex flex-col items-center">
             <h1 className="text-4xl mx-auto mb-20 font-bold">Pie & Doughnut Charts</h1>
-            <div className="w-full max-w-[25rem] mx-auto mt-24 mb-[-4rem]">
+            <div className=" max-w-[25rem] max-h-[30vh] ">
               <PieChart
                 labels={["Processing", "Shipped", "Delivered"]}
                 data={[12, 9, 13]}
@@ -29,9 +29,9 @@ const Pie = () => {
           </section>
 
           {/* Section 2 */}
-          <section className="w-4/5 mx-auto my-16">
+          <section className="w-4/5 mx-auto flex flex-col items-center my-16">
             <h2 className="text-center text-2xl mb-8">Order Fulfillment Ratio</h2>
-            <div className="w-full max-w-[25rem] mx-auto">
+            <div className=" border-3 max-h-[30vh] ">
               <DoughnutChart
                 labels={data.categories.map((i) => i.heading)}
                 data={data.categories.map((i) => i.value)}
@@ -45,9 +45,9 @@ const Pie = () => {
           </section>
 
           {/* Section 3 */}
-          <section className="w-4/5 mx-auto my-16">
+          <section className="w-4/5 mx-auto flex flex-col items-center my-16">
             <h2 className="text-center text-2xl mb-8">Product Ratio</h2>
-            <div className="w-full max-w-[25rem] mx-auto">
+            <div className=" border-3 max-h-[30vh] ">
               <DoughnutChart
                 labels={["In Stock", "Out Of Stock"]}
                 data={[40, 20]}
@@ -60,9 +60,9 @@ const Pie = () => {
           </section>
 
           {/* Section 4 */}
-          <section className="w-4/5 mx-auto my-16">
+          <section className="w-4/5 mx-auto flex flex-col items-center my-16">
             <h2 className="text-center text-2xl mb-8">Product</h2>
-            <div className="w-full max-w-[25rem] mx-auto">
+            <div className=" border-3 max-h-[30vh] ">
               <DoughnutChart
                 labels={[
                   "Marketing Cost",
@@ -86,9 +86,9 @@ const Pie = () => {
           </section>
 
           {/* Section 5 */}
-          <section className="w-4/5 mx-auto my-16">
+          <section className="w-4/5 mx-auto flex flex-col items-center my-16">
             <h2 className="text-center text-2xl mb-8">Revenue Distribution</h2>
-            <div className="w-full max-w-[25rem] mx-auto">
+            <div className=" border-3 max-h-[30vh] ">
               <PieChart
                 labels={["Teenager (Below 20)", "Adult (20-40)", "Older (Above 40)"]}
                 data={[30, 250, 70]}
@@ -103,9 +103,9 @@ const Pie = () => {
           </section>
 
           {/* Section 6 */}
-          <section className="w-4/5 mx-auto my-16">
+          <section className="w-4/5 mx-auto flex flex-col items-center my-16">
             <h2 className="text-center text-2xl mb-8">Users Age Group</h2>
-            <div className="w-full max-w-[25rem] mx-auto">
+            <div className=" border-3 max-h-[30vh] ">
               <DoughnutChart
                 labels={["Admin", "Customers"]}
                 data={[40, 250]}
