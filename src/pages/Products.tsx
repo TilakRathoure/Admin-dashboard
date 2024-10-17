@@ -95,7 +95,7 @@ const Products = () => {
   )();
 
   return (
-    <div className="md:flex bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 md:h-screen">
+    <div className="min-h-screen md:flex bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 md:h-screen">
     <AdminSidebar/>
 
     {/* AddProduct */}
